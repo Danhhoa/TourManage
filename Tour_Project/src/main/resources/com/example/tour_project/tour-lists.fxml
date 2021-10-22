@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tour_project.TourListsController">
+   <children>
+      <TableView fx:id="tableListTours" layoutX="32.0" layoutY="24.0" prefHeight="306.0" prefWidth="456.0">
+        <columns>
+          <TableColumn fx:id="idTourColumn" prefWidth="75.0" text="Mã tour" />
+          <TableColumn fx:id="namePacketColumn" prefWidth="274.0" text="Tên gọi" />
+            <TableColumn fx:id="featureColumn" minWidth="0.0" prefWidth="105.0" text="Đặc điểm" />
+        </columns>
+      </TableView>
+      <Button fx:id="tourDetails" layoutX="534.0" layoutY="305.0" mnemonicParsing="false" onAction="#gotoDetails" text="Details" />
+   </children>
+</AnchorPane>
